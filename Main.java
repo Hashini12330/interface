@@ -3,7 +3,6 @@ public class Main{
         warrior w = new warrior();
         w.fight();
 
-
     }
 }
 
