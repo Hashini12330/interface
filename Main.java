@@ -1,3 +1,5 @@
+import static java.lang.System.out;
+
 public class Main{
     public static void main(){  
         warrior w = new warrior();
@@ -8,6 +10,14 @@ public class Main{
         // Interface — Polymorphic Reference
         Ifighter2 f = new warrior2();
         f.fighter();
+        System.out.println("-----------------------------");
+
+
+        // 03
+        // Interface — Default Method
+        Dog d = new Dog();
+        d.sound();
+
 
     }
 }
@@ -38,4 +48,18 @@ class warrior2 implements Ifighter2{
     public void fighter(){
         System.out.println("warrior fighting 02");
     }
+}
+
+
+
+// 03
+// Interface — Default Method
+interface Animal{
+    default void sound(){
+        out.println("Animal sound");
+    }
+}
+
+class Dog implements Animal{
+    // Animal does not need to impiment sound()
 }
