@@ -17,6 +17,13 @@ public class Main{
         // Interface — Default Method
         Dog d = new Dog();
         d.sound();
+        System.out.println("-----------------------------");
+
+        
+        // 04
+        // interface - static method
+        Animal1.information();
+
 
 
     }
@@ -63,3 +70,15 @@ interface Animal{
 class Dog implements Animal{
     // Animal does not need to impiment sound()
 }
+
+
+// 04
+// interface - static method
+interface Animal1{
+    static void information(){  // information cannot override
+        System.out.println("This is a static method");
+    }
+}
+
+
+// 05
