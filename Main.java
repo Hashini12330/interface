@@ -33,6 +33,17 @@ public class Main{
         // Queue
         que q = new que();
         q.addqueue();
+        System.out.println("-----------------------------");
+
+
+
+        // 06
+        // Queue — Insert, Remove, Examine
+        que1 q1 = new que1();
+        q1.addqueue();
+
+
+
 
 
 
@@ -108,6 +119,33 @@ class que{
     }
 }
 
+
+
+// 06
+// Queue — Insert, Remove, Examine
+class que1{
+    Queue<Integer> queue = new LinkedList<Integer>();
+
+    public void addqueue(){
+
+        // insert
+        queue.add(100);  // FIFO - first in first out
+        queue.add(200);
+        queue.add(300);
+        queue.add(400);
+
+        // examine 
+        System.out.println("Front: " + queue.peek());
+
+        // remove
+        System.out.println("Removed: " + queue.remove());
+        System.out.println("Removed: " + queue.remove());
+
+        // examine after remove
+        System.out.println("Front: " + queue.peek());
+
+    }
+}
 
 
 
