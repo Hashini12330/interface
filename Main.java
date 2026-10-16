@@ -1,4 +1,6 @@
 import static java.lang.System.out;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class Main{
     public static void main(){  
@@ -23,6 +25,15 @@ public class Main{
         // 04
         // interface - static method
         Animal1.information();
+        System.out.println("-----------------------------");
+
+
+
+        // 05
+        // Queue
+        que q = new que();
+        q.addqueue();
+
 
 
 
@@ -82,3 +93,23 @@ interface Animal1{
 
 
 // 05
+// Queue
+class que{
+    Queue<Integer> queue = new LinkedList<Integer>();
+
+    public void addqueue(){
+        queue.add(10);  // FIFO - first in first out
+        queue.add(20);
+        queue.add(30);
+        queue.add(40);
+
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+    }
+}
+
+
+
+
+
+
